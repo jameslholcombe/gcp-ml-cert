@@ -1,0 +1,95 @@
+Hope you were inspired by the Duet AI use case from the previous lesson!
+00:04
+How can you start a generative AI project yourself?
+00:07
+Let’s explore the tools offered on Google Cloud.
+00:11
+Recall from the previous module that Vertex AI provides several options for model training and deployment.
+00:17
+These include AutoML, where you can build an ML model through Google Cloud console without code, and custom training, where you can code your own ML development environment and models.
+00:29
+These two options have been commonly used as a conventional approach to experiment, train, and deploy an ML model.
+00:36
+To meet the growing demand for generative AI, two new tools are now available: Model Garden and Generative AI Studio.
+00:44
+Are you looking to start a generative AI project but don't know where to begin or which model is right for you?
+00:51
+Model Garden on Vertex AI can be your entry point.
+00:55
+What is Model Garden on Vertex AI?
+00:58
+Model Garden is like a model search engine.
+01:00
+It is a single place to discover and interact with many of Google’s pre-trained and open-source models.
+01:07
+You can find three major categories of models: foundation models, task-specific solutions, and fine-tunable or open source models.
+01:18
+Foundation models are pretrained, multitask, large models that can be tuned or customized for specific tasks by using Generative AI Studio, Vertex AI APIs and SDKs.
+01:31
+Some of these models are PaLM for text and chat, Imagen for image, embeddings API for information extraction from text and image, Chirp for speech, and Codey for code generation.
+01:43
+Recall that you learned the APIs for these models in the previous section when you explored pre-trained APIs.
+01:50
+Task-specific solutions are pre-trained models and optimized to solve a specific problem.
+01:56
+These include some tasks you practiced in the previous section by using the Natural Language APIs, like entity analysis, sentiment analysis, and syntax analysis.
+02:07
+More interesting tasks like object detector and text translation are also task-specific solutions.
+02:14
+And finally there are fine-tunable models.
+02:17
+These are mostly open source models that you can fine-tune by using a custom notebook or pipeline.
+02:23
+To find the model that best suits your requirements, you can also use three filters in your search.
+02:28
+They are: Modalities: such as language, vision, and speech.
+02:33
+Tasks: like generation, classification, and detection.
+02:37
+And Features: such as pipeline, notebook, and one-click deployment support.
+02:41
+Let’s say you want to find a language model for a classification task that also provides APIs you can embed into your application code.
+02:50
+In this case PaLM 2 for Text is your choice.
+02:54
+With all these models to choose from, how can you start your workflow?
+02:58
+Model Garden lets you: Use Google's foundation models directly through the Google Cloud console with Generative AI Studio or through code with pre-built APIs.
+03:08
+Tune models in Generative AI Studio.
+03:11
+Deploy models to a notebook.
+03:14
+Customize and use open source models.
+03:17
+Let's walk through a use case of using Model Garden.
+03:21
+Assume you are interested in computer vision.
+03:23
+From the Model Garden page, let’s filter for vision-related models.
+03:28
+Next, in the Tasks section, select Detection.
+03:33
+Great!
+03:34
+The search result shows there's an Owl-Vision Transformer model, an open source model.
+03:40
+It says it's a zero-shot, text conditioned object detection model that can query an image with one or multiple text queries.
+03:48
+Let's dive into this.
+03:50
+Here you see the model card, where you can see more details.
+03:54
+As a data scientist, you might want to try using this model, so you click on Open Notebook.
+04:00
+This opens up a Colab notebook for the Owl-ViT model.
+04:05
+This notebook, in particular, shows how you can deploy the model to an endpoint on Vertex AI, then send
+04:09
+an image to the endpoint to get a prediction, which is a text caption describing what's in the image!
+04:16
+As this example illustrates, the flow from finding a model to deploying and using it becomes super easy with Model Garden.
+04:24
+Hope you enjoyed this demo.
+04:26
+For more information about Model Garden, please check the reading list.

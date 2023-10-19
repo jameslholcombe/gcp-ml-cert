@@ -1,0 +1,101 @@
+With the different types of ML models in your mind, let’s apply concept to practice.
+00:05
+In this lesson, you explore BigQuery ML and walk through the steps to build an ML model with SQL commands.
+00:11
+You learned about BigQuery, the primary data analytics tool on Google Cloud, from the previous lesson.
+00:16
+Although it started out solely as a data warehouse, over time it has evolved to provide features
+00:20
+that support the data-to-AI lifecycle, meaning you can perform both data analytics and build ML models within BigQuery.
+00:28
+In this lesson, you explore BigQuery’s capabilities to build ML models, and walk through the steps and key SQL commands to do so.
+00:36
+If you’ve worked with ML models before, you know that building and training them can be very time-intensive.
+00:42
+You must first import and prepare the data then experiment with different ML models and tune the parameters.
+00:47
+To improve the model performance, you also need to go back and forth to train the model with new data and features.
+00:54
+And finally you need to deploy the model to make predictions.
+00:57
+This is an iterative process that requires a lot of time and resources.
+01:01
+Now with BigQuery ML, you can manage tabular data and execute ML models in one place with just a few steps.
+01:09
+BigQuery ML tunes the parameters for you and helps you manage the ML workflow.
+01:14
+Let’s walk through the phases of a machine learning project and the key SQL commands.
+01:19
+In phase 1, you extract, transform, and load data into BigQuery, if it isn’t there already.
+01:24
+If you’re already using other Google products, like YouTube for example, look out for easy connectors to get that data into BigQuery before you build your own pipeline.
+01:34
+You can enrich your existing data warehouse with other data sources by using SQL joins.
+01:40
+In phase 2, you select and preprocess features.
+01:43
+You can use SQL to create the training dataset for the model to learn from.
+01:48
+BigQuery ML does some of the preprocessing for you, like one-hot encoding of your categorical variables.
+01:56
+One-hot encoding converts your categorical data into numeric data that is required by a training model.
+02:03
+In phase 3, you create the model inside BigQuery.
+02:06
+This is done by using the 'CREATE MODEL' command.
+02:09
+In this example, you want to create a ML model to predict customer purchasing behavior, specifically if they will buy this product in the future.
+02:18
+You give the model a name: ecommerce.classification.
+02:22
+You then specify the model type.
+02:24
+Remember the previous lesson about ML model types — if you want to predict whether a customer will buy or not, which ML model should you use?
+02:33
+That’s right!
+02:35
+A logistic regression model is the answer because you are solving a classification problem.
+02:41
+Other than the logistic regression model, BigQuery ML also supports other popular ML models, including regression
+02:47
+models such as linear regression, and other models, such as k-means clustering and time series forecasting models.
+02:55
+In addition to providing different types of machine learning models, BigQuery ML supports MLOps, machine learning operations.
+03:02
+MLOps turns your ML experiment to production and helps deploy, monitor, and manage the ML models.
+03:09
+You’ll learn more about MLOps later in this course.
+03:13
+You are recommended to start with simple options such as logistic regression and linear regression, and use the results as a benchmark
+03:19
+to compare against more complex models such as DNN (deep neural networks), which take more time and computing resources to train and deploy.
+03:29
+After specifying the model type, you also need to define the label column.
+03:34
+Why?
+03:35
+Remember the two major categories of ML models, supervised and unsupervised?
+03:40
+The former deals with labeled data and predicts a goal, whereas the latter handles unlabeled data and identifies a hidden pattern.
+03:48
+Is this a supervised or unsupervised model?
+03:51
+Of course, it’s a supervised classification problem, thus a labeled column.
+03:56
+From there, you can run the query.
+03:59
+In phase 4, after your model is trained, you can execute an 'ML.EVALUATE' query to evaluate the performance of the trained model on your evaluation dataset.
+04:09
+It’s here that you specify which evaluation metrics the model will access, such as accuracy, precision, and recall.
+04:16
+You’ll explore these metrics later in the next module.
+04:20
+FInally, in phase 5, when you’re happy with your model performance, you can then use it to make predictions.
+04:26
+To do so, invoke the 'ML.PREDICT' command on your newly trained model to return with predictions and the model’s confidence in those predictions.
+04:35
+With the results, your label field will have “predicted” added to the field name.
+04:40
+This is your model’s prediction for that label.
+04:43
+You’ll practice all these steps and the SQL commands using BigQuery ML in the hands-on lab.

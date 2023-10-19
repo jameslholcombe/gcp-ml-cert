@@ -1,0 +1,91 @@
+In the last lesson, you learned about Vertex AI, a unified platform that supports both AutoML, a no-code solution, and custom training, a code-based solution.
+00:10
+In this lesson, you’ll explore AutoML in depth, including the technologies used to power automated ML development.
+00:18
+AutoML, which stands for automated machine learning, aims to automate the process to develop and deploy an ML model.
+00:28
+If you've worked with ML models before, you know that building them can be extremely time consuming, because you
+00:33
+need to repeatedly add new data and features, try different models, and tune parameters to achieve the best result.
+00:42
+When AutoML was first announced in January of 2018, the goal was to save the manual
+00:47
+work from data scientists and automate machine learning pipelines from pre-processing data, to model training and deployment.
+00:56
+But how could this be done?
+00:58
+How can you trust AutoML to generate the best results without bias, and do so in a speedy way?
+01:04
+Let’s look deeper to explore how AutoML works and the main technologies behind it.
+01:09
+AutoML is powered by the latest research from Google.
+01:13
+It’s an ongoing endeavor.
+01:15
+There are four distinct phases.
+01:18
+Phase one is data processing.
+01:20
+After you upload a dataset, AutoML provides functions to automate part of the data preparation process.
+01:27
+For example, it can covert numbers, datetime, text, categories, arrays of categories, and nested fields
+01:34
+into a certain format of data so that it can be fed into an ML model.
+01:41
+Phase two includes searching the best models and tuning the parameters.
+01:46
+Two critical technologies support this auto search.
+01:49
+The first is called neural architect search, which helps search the best models and tune the parameters automatically.
+01:57
+And the second is called transfer learning, which helps speed the searching by using the pre-trained models.
+02:03
+Let’s look at transfer learning first.
+02:06
+Machine learning is similar to human learning.
+02:09
+It learns new things based on existing knowledge.
+02:12
+AutoML has already trained many different models with large amounts of data.
+02:17
+These trained models can be used as a foundation model to solve new problems with new data.
+02:22
+A typical example are large language models (LLM), which are general purpose, and can be pre-trained and fine-tuned for specific purposes.
+02:31
+LLMs are trained for general purposes to solve common language problems such as text classification, question answering, document summarization, and text generation across industries.
+02:44
+The models can then be tailored to solve specific problems in different fields such as retail, finance, and entertainment, using a relatively small size of field datasets.
+02:56
+Transfer learning is a powerful technique that lets people with smaller datasets or less computational power achieve great results by using pre-trained models trained on similar, larger datasets.
+03:09
+Because the model learns through transfer learning, it doesn’t have to learn from the beginning, so it can
+03:13
+generally reach higher accuracy with much less data and computation time than models that don’t use transfer learning.
+03:21
+Now let’s look at neural architecture search.
+03:24
+The goal of neural architecture search is to find optimal models among many options.
+03:29
+Specifically, AutoML Tries different architectures and models, and compares against the performance between models to find the best ones.
+03:37
+For instance, AutoML can search through multiple advanced ML models and automatically tune the parameters to find the best fit for your data.
+03:47
+In phase three, the best models are assembled from phase 2 and prepared for prediction in phase 4.
+03:53
+Note that AutoML does not rely on one single model, but on the top number of models.
+03:59
+The number of models depends on the training budget, but is typically around 10.
+04:04
+The assembly can be as simple as averaging the predictions of the top number of models.
+04:09
+Relying on multiple top models instead of one greatly improves the accuracy of prediction.
+04:16
+By applying these advanced ML technologies, AutoML automates the pipeline from feature engineering, to architecture search, to hyperparameter tuning, and to model ensembly.
+04:29
+It might seem that AutoML can do a better job than a human to find the optimal models that fit your data.
+04:36
+Perhaps the best feature of AutoML is that it provides a no-code solution.
+04:41
+You can point-and-click through a UI to build an ML model with your own data.
+04:45
+You’ll walk through the details from preparing training data, to train you model, and finally get prediction in the next module.

@@ -1,0 +1,105 @@
+Now let’s look at custom training, a do-it-yourself solution to build an ML project.
+00:06
+You explored the options that Google Cloud provides to build machine learning models by using pre-trained APIs, where you directly call Google’s trained models to solve your problems, BigQuery
+00:14
+ML, where you write a few lines of SQL code to train your own model, and AutoML, where you build your ML model with your own data through a UI.
+00:25
+But if you want to create your own machine learning environment to experiment with and build your own pipeline, you need custom training.
+00:32
+Before any coding begins, you must determine what environment you want your ML training code to use.
+00:38
+There are two options: a pre-built container or a custom container.
+00:43
+A pre-built container is like a furnished kitchen with cabinets, appliances, and cookware.
+00:49
+So, if your ML training needs a platform like Python, TensorFlow, and Pytorch, and your not particular about the underlying infrastructure to
+00:56
+run on, or to use our kitchen analogy, which oven or knife you use, a pre-built container is probably your best choice.
+01:06
+A custom container, alternatively, is like an empty room.
+01:10
+You define the exact appliances and tools that you prefer to cook with.
+01:14
+That means you must determine the details like the environment, machine type, and disks when creating the custom container.
+01:21
+In terms of the tools to code your ML model, you can use Vertex AI Workbench.
+01:27
+You can think of Vertex AI Workbench as a Jupyter notebook deployed in a single development environment
+01:32
+that supports the entire data science workflow, from exploring, to training, and then deploying a machine learning model.
+01:41
+You can also use Colab, which will be integrated into Vertex as Vertex AI Colab in 2023.
+01:48
+Upon release, data scientists will have more coding environment to choose from.
+01:53
+After you decide the working environment, the next step is to start writing code!
+01:59
+These days you don’t have to code from scratch.
+02:01
+Instead, you can leverage ML libraries.
+02:05
+An ML library is a collection of pre-written code that can be used to perform machine learning tasks.
+02:11
+These libraries can save developers time and effort by providing them with the tools they need to build machine learning models without having to write everything from the beginning.
+02:21
+As a data scientist, you might already be familiar with popular ML libraries like TensorFlow, scikit-learn, and PyTorch.
+02:29
+They are open source and widely used by a large community of users and developers.
+02:34
+Let’s explore TensorFlow, an end-to-end open platform for machine learning supported by Google.
+02:41
+Tensorflow contains multiple abstraction layers.
+02:44
+You use TensorFlow APIs to develop and train ML models.
+02:48
+The TensorFlow APIs are arranged hierarchically, with the high-level APIs built on the low-level APIs.
+02:56
+The lowest layer is hardware.
+02:58
+TensorFlow can run on different hardware platforms including CPU, GPU, and TPU.
+03:04
+The next layer is the low-level TensorFlow APIs, where you can write your own operations in C++ and call the core, basic, and numeric processing functions written in Python.
+03:16
+The third layer is the TensorFlow model libraries, which provide the building blocks such as neural network layers and evaluation metrics to create a custom ML model.
+03:26
+The high-level TensorFlow APIs like Keras sits on top of this hierarchy.
+03:32
+They hide the ML building details and automatically deploy the training.
+03:36
+They can be your most used APIs.
+03:40
+Note that Vertex AI fully hosts TensorFlow from low-level to high-level APIs.
+03:46
+Regardless of which abstraction level you are writing your TensorFlow code at, Vertex AI gives you a managed service.
+03:53
+Now let’s look at an example of using tf.keras, a high-level TensorFlow library commonly used, to build a simple regression model.
+04:02
+Typically, it takes three fundamental steps: In step one, you create a model, where you piece together the layers of a neural network.
+04:10
+In step two you compile the model, where you specify hyperparameters such as performance evaluation and model optimization.
+04:18
+Finally, you train your model to find the best fit.
+04:22
+Assume you already imported necessary packages like TensorFlow and uploaded the data.
+04:28
+The first step is to create a model by using tf.keras.
+04:33
+Sequential.
+04:33
+To demonstrate, you can define your model as a three-layer neural network.
+04:37
+You’ll explore more details about neural networks such as activation functions in the next module.
+04:43
+The next step is to compile the model by specifying how you want to train it by using the method compile.
+04:50
+For instance, you can decide how to measure the performance by specifying a loss function.
+04:55
+You can also optimize the training by pointing to an optimizer.
+04:59
+The last step is to train the model by using the method fit.
+05:03
+For instance, you can define the input, the training data, and the output, the predicted results.
+05:10
+You can also decide how many iterations you want to train the model by specifying the numbers of epochs.
+05:16
+After you train the model and are satisfied with the performance, you can then make predictions based on the trained model.

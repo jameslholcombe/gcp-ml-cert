@@ -1,0 +1,151 @@
+Let’s start with the theory and history about what generative AI is, and how it is different from other types of machine learning.
+00:07
+You also learn about LLMs, large language models, the models empowering generative AI.
+00:13
+Finally, you explore the potentials of using generative AI in various use cases.
+00:20
+Imagine you are a marketing manager in charge of a new product's marketing campaign.
+00:24
+You need your entire team to work for two weeks to create compelling content and distribute it through a variety of channels, including traditional and social media.
+00:33
+Or imagine you're a data scientist who writes SQL commands to run multiple queries on various data sources.
+00:41
+Or perhaps you're looking for a job and need to send hundreds of customized cover letters in a short period of time.
+00:48
+Well, generative AI can be your new go-to friend for all these tasks!
+00:54
+What is generative AI?
+00:55
+It’s a type of artificial intelligence that generates content for you.
+01:01
+What kind of content?
+01:02
+Well, the generated content can be multi-modal, including text, code, images, speech, video, and even 3D.
+01:12
+When given a prompt or a request, generative AI can help you with a variety of tasks, such as
+01:17
+creating marketing campaigns, generating code, drafting text, extracting information, summarizing documents, providing virtual assistance, and operating call center bots.
+01:31
+And these are just some examples!
+01:33
+How does AI generate new content?
+01:37
+It learns from a massive amount of existing content such as text, image, and audio.
+01:42
+The process of learning from existing content is called training, which results in the creation of a “foundation model.”
+01:49
+The most popular foundation model is a large language model, or LLM.
+01:55
+Please note that LLMs are trained on text data only, whereas other foundation models can be trained on a variety of data modalities, such as images and programming code.
+02:06
+The foundation model can then be used directly to generate content and solve general problems, such as content extraction and document summarization.
+02:15
+It can also be trained further with new datasets in your field to solve specific problems, such as financial model generation and healthcare consulting.
+02:24
+This results in the creation of a new model that is tailored to your specific needs.
+02:29
+How is generative AI different from traditional programming and other types of machine learning?
+02:35
+In traditional programming, you have to specify the rules, then the machine will act on them and return the answers.
+02:41
+To illustrate, you hard code the algorithms for distinguishing a cat: type: animal legs: 4 ears: 2 fur:
+02:50
+yes likes: yarn, catnip However, writing these algorithms is difficult because it’s impossible to exhaust all possible rules.
+03:01
+So you need a new way, which machine learning and specifically neural networks created around 2012.
+03:08
+With machine learning, you feed a machine data and answers and let it discover the rules itself.
+03:14
+For instance, you train the machine on many pictures of cats and other animals, the machine learns the pattern and predicts whether a new picture is a cat.
+03:23
+However, this type of learning is typically in a narrow field to solve a specific task.
+03:29
+What if you want a machine to develop some fundamental intelligence to solve general problems?
+03:35
+Generative AI aims to solve this problem.
+03:37
+With generative AI, you feed a machine a huge amount of multimodal data.
+03:42
+The machine learns a seemingly endless number of concepts and develops foundation models like an LLM.
+03:50
+So when you ask the machine “what’s a cat,” it gives you everything it learned about a cat.
+03:55
+This sounds fantastic!
+03:57
+How has generative AI become a powerful technology with so much potential?
+04:01
+Let’s look at the technology behind it, LLMs.
+04:05
+The revolution started at Google back in 2017, when Transformer, the basis of all generative AI applications seen today, was invented by Google researchers.
+04:16
+Google then developed a few large language models, from BERT and AlphaFold in 2018; T5 in 2019; to recently LaMDA,
+04:21
+which focuses on conversation; PaLM, which is designed for a wide range of general-purpose tasks; and Bard, the chatbot in 2023.
+04:23
+The revolution started at Google back in 2017, when Transformer, the basis of all generative AI applications seen today, was invented by Google researchers.
+04:25
+Google then developed a few large language models, from BERT and AlphaFold in2018, [2019]T5 in 2019, to recently LaMDA
+04:27
+which focuses on conversation,PaLM which is designed for a wide range of general-purpose tasks, and Bard, the chatbot in 2023.
+04:37
+So, what are large language models?
+04:40
+Large language models refer to large, general-purpose language models that can be pre-trained and then fine-tuned for specific purposes.
+04:49
+What does large mean?
+04:51
+Large indicates two meanings, First is the enormous size of the training dataset, sometimes at the petabyte scale.
+04:59
+Second it refers to the number of parameters, now reaching billions and even trillions.
+05:05
+Parameters are essentially the memories and knowledge that the machine has learned during model training.
+05:10
+Parameters determine the ability of a model to solve a problem, such as predicting text.
+05:15
+Why is general purpose?
+05:18
+General-purpose means that the models are sufficient to solve common problems.
+05:22
+This is due to the commonality of a human language regardless of the specific tasks, This leads to the last point, pre-trained and fine-tuned, meaning
+05:30
+to pre-train a large language model for a general purpose with a large dataset and then fine-tune it for specific aims with a much smaller dataset.
+05:41
+Imagine training a dog.
+05:43
+Often you train your dog basic commands such as sit, come, down, and stay.
+05:50
+These commands are normally sufficient for everyday life and help your dog become a good canine citizen.
+05:56
+However, if you need a special-service dog such as a police dog, a guide dog, or a hunting dog, you add special trainings.
+06:05
+This similar idea applies to large language models.
+06:10
+These models are trained for general purposes to solve common language problems such as text classification, question answering, document summarization, and text generation across industries.
+06:23
+The models can then be tailored to solve specific problems in different fields, such as: retail, finance, and entertainment, by using relatively small datasets from these fields.
+06:36
+Powered by foundation models like LLMs, Generative AI is driving new opportunities to improve productivity efficiencies, save operational cost, and create new values.
+06:48
+What are the potential use cases of generative AI?
+06:52
+Generative AI can create content and bring your thoughts and visions to life.
+06:56
+It can: Generate descriptions from images.
+06:58
+And improve images based on instructions.
+07:02
+Generative AI can summarize knowledge.
+07:04
+Such as: Automatically summarizing videos, audio, and paragraphs.
+07:08
+Generate Q&A based on the content.
+07:11
+Generative AI can do search and discover for you.
+07:14
+For example, it can: Search for a document, and Discover coding bugs.
+07:18
+Additionally, generative AI can automate workflows, for instance, it can: Extract and label contracts.
+07:25
+Classify feedback and create tickets.
+07:29
+Can you think of any use cases to apply generative AI?

@@ -1,0 +1,21 @@
+Welcome to the first module of this course, AI foundations!
+00:04
+The first question you may have is why Google and how it differentiates itself in AI development.
+00:10
+Lesson one answers this question and demonstrates the benefits of using the development tools offered by Google Cloud.
+00:16
+You may also wonder how to start an AI project.
+00:19
+Lesson two answers this question and helps you navigate through the whole course.
+00:22
+Next, you explore Google Cloud's infrastructure, focusing on compute and storage.
+00:28
+You then examine the products that support your journey from data to AI on Google Cloud.
+00:33
+After that, you advance to more AI and ML content, starting with ML model categories, which provides context to understand ML model building.
+00:42
+You then explore BigQuery, and specifically BigQuery ML, and walk through the steps to build an ML model with SQL commands.
+00:49
+Finally, you complete a hands-on lab to build your first ML model on Google Cloud with BigQuery ML.
+00:56
+Let’s start!

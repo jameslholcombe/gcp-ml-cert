@@ -1,0 +1,33 @@
+In the previous section of this course, you learned about different options to develop an AI project on Google Cloud, from
+00:06
+an ready-to-use approach like pre-trained APIs, to low or no-code solutions like AutoML, and to DIY solutions, such as custom training.
+00:17
+In this section, you further investigate how to develop an AI project on Google Cloud.
+00:22
+Specifically, you walk through the ML workflow and explore how to create an automated pipeline.
+00:29
+To understand machine learning terms, you must first understand how neural networks learn.
+00:34
+This includes exploring the learning process and the terms associated with it.
+00:38
+Equipped with the essential terminologies, you then explore the overall ML workflow.
+00:42
+You then focus on the first stage of the workflow, data preparation, which includes data uploading and feature engineering.
+00:49
+After that, you advance to the second stage, model development.
+00:53
+This includes model training and evaluation.
+00:54
+You then proceed to the third stage, model serving.
+00:58
+This includes model deployment and monitoring.
+01:01
+Next, you learn about machine learning operations, or MLOps, which takes ML models from development to production.
+01:08
+You’ll also be shown an example of how to build a pipeline to automate the training, evaluation, and deployment of an ML model by using Vertex AI Pipelines.
+01:18
+Finally, you have an AutoML with Vertex AI hands-on lab.
+01:21
+In the lab, you walk through the three stages to build an ML model, from data preparation, to model development, to model serving.
+01:28
+Let’s get started!

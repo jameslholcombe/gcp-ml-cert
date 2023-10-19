@@ -1,0 +1,59 @@
+Let’s focus on the third stage of the ML workflow, model serving.
+00:05
+The recipes are ready, and now it’s time to serve the meal!
+00:08
+This represents the final stage of the machine learning workflow, model serving.
+00:13
+Model serving consists of two steps: First, model deployment, which you can compare to serving a meal to a hungry
+00:19
+customer, and second, model monitoring, which is like checking with the waitstaff to ensure that the restaurant is operating efficiently.
+00:27
+It’s important to note that model management exists throughout this whole workflow to manage the underlying machine learning infrastructure.
+00:35
+This lets data scientists focus on what to do, and not on how to do it.
+00:40
+Let’s start with model deployment, which is the exciting time when the model is implemented and ready to serve!
+00:47
+There are three options to deploy a machine learning model.
+00:50
+The first option is to deploy to an endpoint.
+00:53
+This option is best when immediate results with low latency are needed, such as making instant recommendations based on a user’s browsing habits whenever they’re online.
+01:02
+A model must be deployed to an endpoint before it can be used to serve real-time predictions.
+01:09
+The second option is to deploy using batch prediction.
+01:12
+This option is best when no immediate response is required, and accumulated data can be processed with a single request.
+01:20
+For example, sending out new ads every other week based on the user’s recent purchasing behavior and what’s currently popular on the market.
+01:29
+And the final option is to deploy using offline prediction.
+01:33
+This option is best when the model should be deployed in a specific environment, off the cloud.
+01:38
+An example for this would be sensitive data that has requirements to not be sent externally.
+01:43
+In the lab, you practice predicting with an endpoint.
+01:47
+Now let’s shift our focus to model monitoring.
+01:50
+The backbone of automating ML workflow on Vertex AI is a tool kit called Vertex AI Pipelines.
+01:57
+It automates, monitors, and governs machine learning systems by orchestrating the workflow in a serverless manner.
+02:04
+Imagine you’re in a production control room, and Vertex AI Pipelines is displaying the production data onscreen.
+02:10
+If something goes wrong, it automatically triggers and displays a warning based on a predefined threshold.
+02:16
+With Vertex AI Workbench, which is a notebook tool, you can define your own pipeline using SDKs.
+02:23
+You can do this with prebuilt pipeline components, which means that you primarily need to specify how the pipeline is put together using components as building blocks.
+02:31
+You’ll explore more details about Vertex AI Pipelines in the next lesson.
+02:36
+And it’s with these final two steps, model deployment and model monitoring, that you complete the exploration of the machine learning workflow.
+02:45
+The restaurant is open and operating smoothly.
+02:48
+Bon appetit!

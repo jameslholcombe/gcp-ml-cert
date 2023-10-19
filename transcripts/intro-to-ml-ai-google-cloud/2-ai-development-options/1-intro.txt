@@ -1,0 +1,21 @@
+In the first section of this course, you learned about AI foundations, specifically about cloud essentials such as compute, storage, and networking.
+00:10
+You also learned about data tools like BigQuery, which can help you start the journey from data to AI.
+00:17
+Now you’ll explore how to develop an AI project in Google Cloud, specifically the options available to build an ML model.
+00:26
+You’ll begin by comparing AI development options, from pre-made, to low-code and no-code, to a do-it-yourself approach, followed
+00:33
+by pre-trained APIs, which are ready-made solutions using pre-trained machine learning models that don’t require any training data.
+00:42
+You’ll get an introduction to Vertex AI, Google’s unified platform to build an end-to-end machine learning project.
+00:49
+You’ll explore AutoML on Vertex AI, which is a low- or no-code option for automating machine
+00:55
+learning development, from data preparation to model training and model serving with your own training data.
+01:01
+You’ll learn about custom training, which is a solution that lets you manually code ML projects with tools like Python and TensorFlow.
+01:10
+And finally, you’ll get hands-on practice with the Natural Language API to identify subjects and analyze sentiment in text.
+01:17
+Let’s get started!

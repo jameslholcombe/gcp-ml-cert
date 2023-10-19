@@ -1,0 +1,129 @@
+In this lesson, you explore an advanced topic: MLOps and workflow automation.
+00:06
+You learned from the previous lessons to build an ML model through three main stages, data preparation, model development, and model serving.
+00:14
+You have two approaches to build an end-to-end workflow.
+00:16
+One is codeless through Google Cloud console, like AutoML on Vertex AI.
+00:20
+But what if you want to automate this workflow to achieve continuous integration, training, and delivery?
+00:27
+Here comes the other option: to code a pipeline that automates the ML workflow.
+00:34
+Machine learning operations, or MLOps, play a big role.
+00:37
+MLOps combines machine learning development with operations and applies similar principles from DevOps (or development operations) to machine learning models.
+00:47
+MLOps aims to solve production challenges related to machine learning.
+00:52
+In this case, this refers to building an integrated machine learning system and operating it in production.
+00:58
+These are considered to be some of the biggest pain points by the ML practitioners’ community, because both data and code are constantly evolving in machine learning.
+01:08
+Practicing MLOps means automating and monitoring each step of the ML system construction to enable continuous integration, training, and delivery.
+01:18
+The backbone of MLOps on Vertex AI is a tool kit called Vertex AI Pipelines, which supports both Kubeflow Pipelines, or KFP, and TensorFlow Extended, or TFX.
+01:31
+If you already use TensorFlow to build ML models that process terabytes of structured data, it makes sense to use TFX and turn that code into an ML pipeline.
+01:41
+Otherwise, KFP can be a good alternative.
+01:44
+Learn more about how to choose between the Kubeflow Pipelines SDK and TFX from the reading list.
+01:50
+An ML pipeline contains a series of processes and runs in two different environments.
+01:56
+First is the experimentation, development, and test environment, And second is the staging, pre-production, and production environment.
+02:04
+In the development environment, you start from data preparation which includes data extraction, analysis, and preparation, to model development like training, evaluation, and validation.
+02:15
+The result is a trained model that can be entered in model registry.
+02:20
+Once the model is trained, the pipeline moves to the staging and production environment, where you serve the model, which includes prediction and monitoring.
+02:28
+Each of these processes can be a pipeline component, which is a self-contained set of code that performs one task of a workflow.
+02:36
+You can think of a component as a function, which is a building block of a pipeline.
+02:41
+You can either build a custom component on your own or leverage the pre-built components provided by Google.
+02:48
+If you want to accomplish a specific task to tailor your ML workflow, such as determining a special threshold for model deployment, you may need to code a custom component.
+02:59
+Before doing so, check the pre-built components offered by Google Cloud.
+03:04
+You may find a pipeline component to reuse or customize to suit your needs.
+03:09
+Learn more about using Google Cloud pipeline components in your pipeline in the reading list.
+03:14
+All these components are like pieces of an ML pipeline.
+03:17
+You need to assemble them together to automate the entire ML workflow.
+03:22
+Organizations often implement ML automation in three phases.
+03:26
+Phase zero is the starting point, where you have not configured any MLOps.
+03:32
+You typically use the GUI, or graphical user interface-based workflow such as AutoML for training, deployment, and serving.
+03:39
+Phase zero is critical because it helps you build an end-to-end workflow manually before you automate it.
+03:45
+In phase one, you start automating your ML workflow by building components using the Vertex AI Pipelines SDKs.
+03:53
+An example of a component would be the training pipeline.
+03:56
+It is in this phase that you develop the building blocks for future use.
+04:01
+In phase two, you integrate the separate components to form an entire workflow and to achieve CI, CT, and CD.
+04:08
+Let’s look at an example.
+04:11
+Assume you want to build a pipeline to train, evaluate, and deploy an AutoML model that classifies beans into one of 7 types based on their characteristics.
+04:20
+You have two main steps: build a pipeline and then run it.
+04:24
+To build a pipeline, you first plan it as a series of components, which can be a combination of custom and pre-built.
+04:30
+To promote reusability, each component should have a single responsibility.
+04:35
+Second, you build any custom components that are needed.
+04:39
+For example, you create a component called classification_model_eval_metrics.
+04:44
+You use this component to compare the evaluation metrics to a threshold after the model is trained, and determine whether the model should be deployed.
+04:53
+If the model performs well, you deploy it.
+04:55
+Otherwise, you retrain the model.
+04:57
+3.
+04:57
+Third, you assemble the pipeline by adding pre-built components, for example: TabularDatasetCreateOp creates a tabular dataset in Vertex AI given a dataset source either in Cloud Storage or BigQuery.
+05:11
+AutoMLTabularTrainingJobRunOp kicks off an AutoML training job for a tabular dataset.
+05:19
+EndpointCreateOp creates an endpoint in Vertex AI.
+05:23
+And ModelDeployOp deploys a given model to an endpoint in Vertex AI.
+05:28
+You also include a custom component, classification_model_eval_metrics, from the previous step to compare the performance of the trained model to a threshold.
+05:37
+After the pipeline is built, you must compile and run it.
+05:40
+First, you compile it using the compiler.Compiler().
+05:45
+compile() or compile() commands.
+05:47
+And then, you define and run the pipeline job.
+05:50
+The good news is, you don’t have to create a pipeline from the beginning.
+05:55
+Vertex AI provides a few templates like the one for classification / regression of tabular data with AutoML, to help you start your journey.
+06:04
+Now you have an automated pipeline to train, evaluate, and deploy an ML model.
+06:09
+This pipeline will check the performance of the model constantly and decide whether it should be deployed or retained without your intervention.
+06:17
+The nice thing is that Google Cloud also visualizes the pipeline based on the coding, with which you can easily check the components and the corresponding artifacts.
+06:27
+This example demonstrated the overall process to build a pipeline.
+06:31
+To know more about pipeline details, please practice with the coding example in the demo, Introduction to Vertex AI Pipelines, in the reading list for this course.

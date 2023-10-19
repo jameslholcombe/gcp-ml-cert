@@ -1,0 +1,67 @@
+In this lesson, let’s investigate the primary data and AI products on Google Cloud.
+00:06
+In the last lesson, you examined Google Cloud infrastructure, specifically compute and storage.
+00:12
+The final layer of the Google Cloud infrastructure that is left to explore is data and AI products.
+00:18
+As you explored in the earlier lesson, Google offers a range of data and AI tools.
+00:23
+So, how do you know which is best for your business needs?
+00:27
+Let’s look closer at the list of products, which can be divided into four general categories along the data-to-AI workflow: You gather data from multiple sources through ingestion and process.
+00:38
+The data is then saved in different types of storage based on data type and business needs.
+00:44
+You analyze the data and visualize the results.
+00:47
+And you can further train an ML model with historical data to either predict future trends or generate new content.
+00:54
+These tools are seamlessly connected on Google Cloud, making it easy for data scientists and AI developers to transition from data to AI.
+01:03
+For example, BigQuery provides embedded AI features that allow you to directly call SQL commands to train an ML model.
+01:10
+Additionally, on Vertex AI, the AI development platform, you can use SQL commands in a notebook to import data from BigQuery and further train ML models.
+01:20
+Let’s cover the products available in each stage of the data-to-AI workflow.
+01:25
+The first category is ingestion and process, which include products that are used to digest both real-time and batch data.
+01:32
+The list includes Pub/Sub, Dataflow, Dataproc, and Cloud Data Fusion.
+01:38
+Please check cloud.google.com/training for more training on data ingestion and process.
+01:44
+The second product category is data storage, and you’ll recall from earlier that there are
+01:49
+five storage products: Cloud Storage, which saves unstructured data such as text, image, audio and video.
+01:57
+Cloud SQL Cloud Spanner Cloud Bigtable, and Firestore.
+02:03
+Cloud SQL and Cloud Spanner are relational databases, while Bigtable and Firestore are NoSQL databases.
+02:10
+The third product category is analytics.
+02:12
+The major analytics tool is BigQuery, which you’ll explore more later in this module.
+02:18
+BigQuery is a fully managed data warehouse that can be used to analyze data through SQL commands.
+02:23
+In addition to BigQuery, you have BI, or business intelligence, tools to analyze data and visualize results.
+02:29
+For example: Looker, which is a comprehensive BI tool.
+02:33
+Looker offers different versions of its product such as Looker for enterprise use and Looker Studio for individual use.
+02:40
+And the final product category is AI and machine learning, which includes both AI development tools and AI solutions.
+02:47
+These products are either integrated with generative AI or embedded with generative AI capabilities: The major product to support AI development is Vertex
+02:56
+AI which is a unified platform and includes multiple tools such as AutoML, Vertex AI Workbench, Colab, Generative AI Studio, and Model Garden.
+03:08
+AI solutions are built on the ML development platform and include state-of-the-art technologies to meet both horizontal and vertical market needs.
+03:17
+These include: Document AI Contact Center AI Discovery AI for Retail, and AI for healthcare These products unlock insights that only large amounts of data can provide.
+03:29
+Many of them have been recently embedded with generative AI capabilities.
+03:33
+For example, Contact Center AI is equipped with chatbots that are powered with large language models to understand natural language and converse like a human agent.
+03:43
+You’ll explore the machine learning options and workflow together with these products in greater detail later.

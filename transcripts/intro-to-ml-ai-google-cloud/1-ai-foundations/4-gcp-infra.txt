@@ -1,0 +1,163 @@
+Let’s explore Google Cloud infrastructure.
+00:03
+Google has been working with data and artificial intelligence since its early days as a company in 1998.
+00:09
+Ten years later, in 2008, Google Cloud was launched to provide secure and flexible cloud computing and storage services.
+00:17
+You can think of the Google Cloud infrastructure in terms of three layers.
+00:20
+At the base layer is networking and security, which lays the foundation to support all of Google’s infrastructure and applications.
+00:29
+On the next layer sit compute and storage.
+00:32
+Google Cloud separates, or decouples, as it’s technically called, compute and storage so they can scale independently based on need.
+00:40
+The top layer includes data and AI/machine learning products, which enable you to perform tasks to ingest, store, process, and deliver business insights, data pipelines, and ML models.
+00:52
+Thanks to Google Cloud, these tasks can be accomplished without needing to manage and scale the underlying infrastructure.
+00:59
+Let’s begin with compute.
+01:02
+Organizations with growing data needs often require lots of compute power to run data and AI jobs.
+01:08
+And as organizations design for the future, the need for compute power only grows.
+01:13
+Google offers a range of computing services.
+01:16
+The first is Compute Engine.
+01:18
+Compute Engine is an IaaS, or infrastructure as a service, offering which provides compute, storage, and network resources virtually that are similar to a physical machine.
+01:28
+You use the virtual compute and storage resources the same as you manage them locally.
+01:34
+Compute Engine provides maximum flexibility for those who prefer to manage server instances themselves.
+01:40
+The second is Google Kubernetes Engine, or GKE GKE runs containerized applications in a cloud environment, as opposed to on an individual virtual machine like Compute Engine.
+01:53
+A container represents code packaged up with all its dependencies.
+01:57
+The third computing service offered by Google is App Engine, a fully managed PaaS, or platform as a service, offering.
+02:04
+PaaS offerings bind code to libraries that provide access to the infrastructure application needs.
+02:11
+This allows more resources to be focused on application logic.
+02:15
+Then there is Cloud Functions, which executes code in response to events, like when a new file is uploaded to Cloud Storage.
+02:22
+It’s a completely serverless execution environment, which means you don’t need to install any software locally to run the code and you are free from provisioning and managing servers.
+02:33
+Cloud Functions is often referred to as Functions as a Service.
+02:37
+And, finally, there is Cloud Run, a fully managed compute platform that enables you to run request or event-driven stateless workloads without having to worry about servers.
+02:47
+It abstracts away all infrastructure management so you can focus on writing code, and it
+02:52
+automatically scales up and down from zero, so you never have to worry about scale configuration.
+02:59
+Cloud Run charges you only for the resources you use so you never pay for overprovisioned resources.
+03:05
+Where does the processing power come from?
+03:07
+It’s from the hardware: computer chips.
+03:11
+However, traditional computer chips, like a CPU, or central processing unit, and and even the more recent
+03:18
+GPU, or graphics processing unit, may no longer scale to adequately reach the rapid demand for ML.
+03:27
+To help overcome this challenge, in 2016 Google introduced the Tensor Processing Unit, or TPU.
+03:34
+TPUs are Google’s custom-developed application-specific integrated circuits (ASICs) used to accelerate machine learning workloads.
+03:43
+TPUs act as domain-specific hardware, as opposed to general-purpose hardware with CPUs and GPUs.
+03:50
+This allows for higher efficiency by tailoring the architecture to meet the computation needs in a domain, such as the matrix multiplication in machine learning.
+03:59
+TPUs are generally faster than current GPUs and CPUs for AI and ML applications.
+04:06
+They are also significantly more energy-efficient.
+04:10
+Cloud TPUs have been integrated across Google products, making this state-of-the-art hardware and supercomputing technology available to Google Cloud customers.
+04:20
+Let’s now examine storage.
+04:22
+For proper scaling capabilities, compute and storage are decoupled.
+04:27
+This is one major difference between cloud and desktop computing.
+04:31
+With cloud computing, compute and storage can scale separately.
+04:35
+Most applications require a database and storage solution of some kind.
+04:39
+Google Cloud offers fully managed database and storage services.
+04:43
+These include: Cloud Storage Cloud Bigtable Cloud SQL Cloud Spanner Firestore and BigQuery How do you choose from these products and services?
+04:56
+Well, it depends on the data type and business needs.
+04:58
+Let’s look at the data type, which includes unstructured versus structured data.
+05:04
+Unstructured data is information stored in a non-tabular form such as documents, images, and audio files.
+05:11
+Unstructured data is usually suited to Cloud Storage.
+05:14
+Note that BigQuery now offers the capability to store unstructured data as well.
+05:19
+Cloud Storage has four primary storage classes.
+05:22
+The first is standard storage.
+05:25
+Standard storage is considered best for frequently accessed, or “hot,” data.
+05:29
+It’s also great for data that is stored for only brief periods of time.
+05:35
+The second storage class is nearline storage.
+05:38
+This is best for storing infrequently accessed data, like reading or modifying data once per month or less, on average.
+05:45
+Examples include data backups, long-tail multimedia content, or data archiving.
+05:50
+The third storage class is coldline storage.
+05:53
+This is also a low-cost option for storing infrequently accessed data.
+05:57
+However, as compared to nearline storage, coldline storage is meant for reading or modifying data at most once every 90 days.
+06:07
+The fourth storage class is archive storage.
+06:10
+This is the lowest-cost option, used ideally for data archiving, online backup, and disaster recovery.
+06:17
+It’s the best choice for data that you plan to access less than once a year,
+06:19
+because it has higher costs for data access and operations and a 365-day minimum storage duration.
+06:28
+Alternatively, there is structured data, which represents information stored in tables, rows, and columns.
+06:35
+Structured data comes in two types: transactional workloads and analytical workloads.
+06:40
+Transactional workloads stem from online transaction processing systems, which are used when fast data inserts and updates are required to build row-based records.
+06:49
+This is usually to maintain a system snapshot.
+06:53
+They require relatively standardized queries that impact only a few records.
+06:58
+Then there are analytical workloads, which stem from online analytical processing systems, which are used when entire datasets need to be read.
+07:06
+They often require complex queries, for example, aggregations.
+07:10
+Once you’ve determined if the workloads are transactional or analytical, you then need to identify whether the data will be accessed using SQL or not.
+07:18
+So, if your data is transactional and you need to access it using SQL, then two options are Cloud SQL and Cloud Spanner.
+07:26
+Cloud SQL works best for local to regional scalability, while Cloud Spanner works best to scale a database globally.
+07:33
+If the transactional data will be accessed without SQL, Firestore might be the best option.
+07:39
+Firestore is a transactional NoSQL, document-oriented database.
+07:43
+If you have analytical workloads that require SQL commands, BigQuery is likely the best option.
+07:49
+BigQuery, Google’s data warehouse solution, lets you analyze petabyte-scale datasets.
+07:54
+Alternatively, Cloud Bigtable provides a scalable NoSQL solution for analytical workloads.
+08:00
+It’s best for real-time, high-throughput applications that require only millisecond latency.

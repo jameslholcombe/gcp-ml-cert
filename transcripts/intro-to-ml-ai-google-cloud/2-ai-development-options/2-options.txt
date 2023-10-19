@@ -1,0 +1,99 @@
+Let’s begin with Google Cloud’s AI development options, which include out-of-the-box, low-code and no-code, and do-it-yourself.
+00:07
+You’ll explore the pros and cons of each and examine a decision tree to help you consider which option might be best for your business problem.
+00:16
+Imagine that you’re helping your organization use AI to transform your business model and operation.
+00:22
+Where and how should you start?
+00:23
+Let’s say you are a business user or an application developer, and you don’t have training data and lack experience developing an ML model.
+00:32
+However, you really want to use AI to automatically label and classify customer feedback.
+00:37
+What can you do?
+00:39
+Or perhaps you’re a data analyst, and you have some training data and experience using SQL.
+00:45
+How can you build a custom ML model with your existing skills?
+00:48
+Maybe you’re a data scientist, you have a large amount of data and want to train
+00:51
+a custom ML model; however, you don’t want to spend hours tuning ML parameters from the beginning.
+00:58
+What choices do you have?
+01:00
+Or what if you’re an ML engineer or scientist and enjoy using do-it-yourself models and code to operationalize the ML pipeline.
+01:08
+What tools can you use?
+01:10
+Well, you can find tools on Google Cloud to help achieve your goals, from preconfigured solutions such as pre-trained APIs, to low
+01:19
+or no-code solutions such as BigQuery ML and AutoML, to a completely DIY approach with a code-based solution by using custom training.
+01:28
+Let’s look at each of them.
+01:31
+Google Cloud offers four options for building machine learning models.
+01:36
+The first option is to use pre-trained APIs.
+01:39
+API stands for application programming interface.
+01:43
+This option lets you use pre-trained machine learning models, so you don’t need to build your own if you don’t have training data or machine learning expertise in-house.
+01:53
+The second option is BigQuery ML, which you learned about in the previous module.
+01:58
+This option uses SQL queries to create and execute machine learning models in BigQuery.
+02:04
+If you already have your data in BigQuery and your problems fit the pre-defined ML models offered by BigQuery ML, this could be your choice.
+02:13
+The third option is AutoML, which is a no-code solution that helps you build your own machine learning models on Vertex AI through a point-and-click interface.
+02:23
+And finally, there is custom training, through which you can code your very own machine learning environment, training, and deployment.
+02:31
+This option allows you flexibility and control over the ML pipeline.
+02:35
+Let’s compare the four options to help you decide which one to use for building your ML model.
+02:41
+Note that the technologies change constantly and this is only a brief guideline.
+02:46
+BigQuery ML only supports tabular data, whereas the other three support tabular, image, text, and video.
+02:54
+Pre-trained APIs also process audio.
+02:57
+In terms of training data size, pre-trained APIs do not require any training data, Whereas BigQuery ML and custom training require a large amount of data.
+03:08
+Pre-trained APIs and AutoML are user friendly with low requirements for machine learning and coding
+03:13
+expertise, whereas custom training has the highest requirement, and BigQuery ML requires you to understand SQL.
+03:22
+At the moment, you can’t tune the hyperparameters with pre-trained APIs or AutoML; however, you can experiment with hyperparameters by using BigQuery ML and custom training.
+03:34
+Pre-trained APIs require no time to train a model because they directly use pre-trained models from Google.
+03:40
+The time to train a model for the other three options depends on the specific project.
+03:45
+Normally, custom training takes the longest time, because it builds the ML model from the beginning, unlike AutoML and BigQuery ML.
+03:54
+The best option depends on your business needs and ML expertise.
+03:58
+Budget is also an important consideration.
+04:00
+Visit Google Cloud’s website for detailed pricing information.
+04:05
+If you have little ML experience and no intention to train your own ML models, using pre-trained APIs might be the best choice.
+04:14
+Pre-trained APIs address common perceptual tasks such as vision, video, and natural language.
+04:19
+They are ready to use without any model development effort.
+04:23
+If your data engineers, scientists, or analysts are familiar with SQL and already have data in BigQuery, BigQuery ML lets you use SQL queries to build predefined ML models.
+04:37
+If you wish to build custom models with your own training data while you spend minimal time coding, then AutoML on Vertex AI is your choice.
+04:46
+AutoML allows you focus on business problems instead of the underlying model architecture and provisioning.
+04:53
+If your ML engineers and data scientists want full control of ML workflow, Vertex AI custom
+04:58
+training lets you train and serve custom models with code on Vertex AI Workbench or Google Colab.
+05:06
+Let’s walk through pre-trained APIs, AutoML, and custom training one by one later in this module.

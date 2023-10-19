@@ -1,0 +1,7 @@
+This is a lab. Please give a thorough overview of BQ ML including:
+Create a training and evaluation dataset to be used for batch prediction
+Create a classification (logistic regression) model in BigQuery ML
+Evaluate the performance of your machine learning model
+Predict and rank the probability of an outcome using your machine learning model
+
+Include code snippets where applicable.

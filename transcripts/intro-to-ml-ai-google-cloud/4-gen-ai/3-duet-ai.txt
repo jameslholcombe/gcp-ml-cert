@@ -1,0 +1,105 @@
+Now that you are familiar with the concepts of generative AI, let's look at a real-world application
+00:04
+of it: how Google used generative AI technologies to develop Duet AI, a developer assistant on Google Cloud.
+00:13
+If you are a cloud developer, you have many options to aid in your work.
+00:18
+You can code in your choice of languages, enjoy portability with containers, and minimize complexity with serverless platforms.
+00:25
+But let’s face it, building and onboarding new cloud applications still requires a lot of manual planning, synthesis, and, yes, hard work.
+00:35
+You need to research and plan your deployment, create a workable, secure architecture, and of course, you have
+00:41
+to write the actual code, Can you, a developer, get a personal Google Assistant specialized in Google Cloud?
+00:49
+Specifically, one that: Generates code, identifies bugs, and suggests fixes, like a code assistant.
+00:56
+Answers specific development or cloud-related questions with natural language, like a chat assistant.
+01:02
+Creates business applications such as building workflows into Google Workspace, like an app assistant.
+01:08
+And be on call 24/7?
+01:11
+The answer is yes!
+01:13
+Now you have Duet AI, an always-on AI assistant across Google Cloud.
+01:18
+This tool was developed by Google and is powered by its state-of-the-art generative AI foundation models.
+01:25
+Let's look at how Google built DuetAI by tuning Codey, Google's foundational model for code, with Google Cloud field data.
+01:33
+The general life cycle to build an LLM application like Duet AI can be outlined as follows.
+01:40
+Data ingestion and preparation, domain pre-training, instruction tuning, offline evaluation, and integration.
+01:49
+Let’s look at each stage in depth.
+01:53
+Data ingestion and preparation: The training data was collected from blogs, documentation, podcasts, YouTube video transcripts, code snippets, and any other sources relevant to Google Cloud development.
+02:06
+These datasets were parsed and sanitized by using rigorous data preparation and quality control pipelines developed by Google’s data engineers.
+02:15
+An example of this would be converting HTML to markdown and removing links and images.
+02:20
+Domain pre-training: After the data quality was verified, Codey, the code foundational model, was fine-tuned with the Google Cloud-specific training data.
+02:31
+This step ensures that domain knowledge is well-integrated into the model while retaining some of the model's generic natural language and coding capabilities.
+02:39
+The exact composition of this domain pre-training mixture is usually determined empirically by training model candidates with various mixture compositions, and then evaluating them against each other.
+02:52
+Instruction tuning: This training step was used to improve the model's performance in domain-specific tasks.
+02:59
+The model responses need to be aligned as closely as possible to the desired responses in terms of style, format, and safety.
+03:07
+This step required small datasets of the highest quality.
+03:11
+These datasets were curated, written, and rewritten by expert technical writers for each domain-specific task, for example: Google Cloud code generation, troubleshooting QA, and SQL query generation.
+03:25
+Instruction tuning can also use RLHF, reinforcement learning from human feedback, an ML technique that uses human feedback and a reward system to reinforce the machine learning.
+03:38
+Offline evaluation: The models were evaluated after each stage of training.
+03:42
+A combination of automated benchmarks for code generation, question answering and human evaluation were used.
+03:49
+For human evaluation, Google Cloud expert raters assessed the model responses on a small, carefully selected evaluation set that covers different types and subdomains of questions.
+04:00
+These questions are expected from users.
+04:03
+Raters utilized criteria such as correctness, verbosity, style, and safety to holistically evaluate response quality.
+04:10
+The consolidated evaluations were used to select the best model and make adjustments to the training corpus to address any gaps or regressions.
+04:19
+Integration: After the best performing model was selected, the model is integrated with other building blocks of the LLM application.
+04:27
+This includes components such as responsible AI checking points.
+04:32
+Using generative AI to increase development productivity and improve user experience, Google makes your life easier with Duet AI.
+04:40
+Now you have a 24/7 personalized assistant to help you accomplish many tasks.
+04:45
+Let’s look at what it can do for you.
+04:48
+Code assistance provides AI-driven code assistance for cloud users such as application developers and data engineers.
+04:55
+It gives code recommendations as you type in real time, generates full functions and code blocks, and identifies vulnerabilities and errors in the code, while it suggests fixes.
+05:06
+Code assistance is available through multiple products and services across Google Cloud, such as in Cloud Workstations and the Google Cloud console.
+05:08
+Developers will also find code assistance in the Cloud Shell Editor or through the Cloud Code IDE extensions for VSCode and JetBrains IDEs.
+05:10
+It supports multiple languages including Go, Java, Javascript, Python, and SQL.
+05:11
+Chat assistance allows you to use simple natural language to get answers on specific development or cloud-related questions.
+05:14
+You can engage with chat assistance to get real-time guidance on various topics, such as how
+05:19
+to use certain cloud services or functions, or get detailed implementation plans for their cloud projects.
+05:26
+It can also provide architectural or coding best practices, which helps reduce the need to go searching for relevant documents.
+05:33
+App assistance: Duet AI for AppSheet lets you create intelligent business applications, connect your data, and build workflows into Google Workspace through natural language.
+05:45
+With no coding required, you are able to build apps by describing your needs in a chat guided by AI-powered prompts.
+05:53
+This makes app creation accessible to more users, which can allow developer teams to focus their time on other high-impact work.
+06:01
+We hope this use case inspires you to find the value of generative AI and discover more ways to use it to improve your productivity!

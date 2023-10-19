@@ -1,0 +1,123 @@
+Let’s advance to the second stage, model development, where you train the model and evaluate the result.
+00:06
+Now that our data is ready—which, if you return to the cooking analogy, is the ingredients— it’s time to train the model.
+00:13
+This is like experimenting with recipes.
+00:17
+This stage involves two steps: model training, which is like cooking the recipe, and model evaluation, which is like testing how good the meal is.
+00:24
+This process might be iterative.
+00:27
+To set up an ML model, you need to specify a few things.
+00:30
+First of all is the training method, where you tell Vertex AI the dataset you just uploaded from the preparation stage.
+00:37
+Depending on the data type, whether it is tabular, image, text, or video, you specify the training objective.
+00:44
+This is the goal of the model training and the task you want to solve.
+00:48
+Then you decide the training method, AutoML, without code, or custom training, using code.
+00:54
+The next step is to determine the training details.
+00:56
+For example, if you are training the model to solve a supervised learning problem such as regression and classification, you must choose the target column from your dataset.
+01:06
+In training options, you can choose certain features to participate in the training and transform the data type if needed.
+01:13
+Finally you specify the budget and pricing, and then click Start training.
+01:17
+AutoML will train the model for you and choose the best performed models among thousands of others!
+01:24
+Do you recall the powerful technologies behind AutoML?
+01:27
+Right, the credit there goes to neural architecture search and transfer learning.
+01:32
+While you are experimenting with a recipe, you need to keep tasting it to ensure that it meets expectations.
+01:39
+This is the evaluation portion of the model development stage.
+01:43
+Vertex AI provides extensive evaluation metrics to help determine a model’s performance.
+01:49
+Let's focus on the metrics of recall and precision when evaluating the performance of classification models.
+01:55
+To do this, you’ll use a confusion matrix.
+01:58
+A confusion matrix is a specific performance measurement for machine learning classification problems.
+02:05
+It’s a table with combinations of predicted and actual values.
+02:09
+To keep things simple, we assume the output includes only two classes.
+02:12
+Let’s explore an example.
+02:15
+The first is a true positive combination, which can be interpreted as, “The model predicted positive, and that’s true.”
+02:21
+The model predicted that this is an image of a cat, and it actually is.
+02:26
+The opposite of that is a true negative combination, which can be interpreted as, “The model predicted negative, and that’s true.”
+02:34
+The model predicted that a dog is not a cat, and it actually isn’t.
+02:39
+Then there is a false positive combination, otherwise known as a type 1 error, which can be interpreted as “The model predicted positive, and that’s false.”
+02:48
+The model predicted that a dog is a cat but it actually isn’t.
+02:53
+Finally, there is the false negative combination, otherwise known as a Type 2 Error, which can be interpreted as, “The model predicted negative, and that’s false.”
+03:03
+The model predicted that a cat is not a cat, but it actually is.
+03:08
+A confusion matrix is the foundation for many other metrics used to evaluate the performance of a machine learning model.
+03:14
+Let’s look at the two popular metrics, recall and precision, that you will encounter in the lab.
+03:21
+Recall refers to all the positive cases, and looks at how many were predicted correctly.
+03:26
+This means that recall is equal to the true positives, divided by the sum of the true positive and false negatives.
+03:34
+Precision refers to all the cases predicted as positive, and how many are actually positive.
+03:39
+This means that precision is equal to the true positives, divided by the sum of the true positives and false positives.
+03:47
+Imagine you’re fishing with a net.
+03:49
+Using a wide net, you caught both fish and rocks: 80 fish out of 100 total fish in the lake, plus 80 rocks.
+03:57
+The recall in this case is 80%, which is calculated by the number of fish caught, 80, divided by the total number of fish in the lake, 100.
+04:06
+The precision is 50%, which is calculated by taking the number of fish caught, 80, and dividing it by the number of fish and rocks collected, 160.
+04:16
+Let’s say you wanted to improve the precision, so you switched to a smaller net.
+04:21
+This time you caught 20 fish and 0 rocks.
+04:24
+The recall becomes 20% (20 out of 100 fish collected) and the precision becomes 100% (20 out of 20 total fish and rocks collected).
+04:35
+Precision and recall are often a trade-off.
+04:37
+Depending on your use case, you might need to optimize for one or the other.
+04:43
+Consider a classification model where Gmail separates emails into two categories: spam and not-spam.
+04:49
+If the goal is to catch as many potential spam emails as possible, Gmail might want to prioritize recall.
+04:56
+In contrast, if the goal is to only catch the messages that are definitely spam without blocking other emails, Gmail might want to prioritize precision.
+05:07
+Vertex AI visualizes the precision-recall curve so it can be adjusted based on the problem that needs to be solved.
+05:14
+You’ll get the opportunity to practice adjusting precision and recall in the AutoML lab.
+05:21
+In addition to the confusion matrix and the metrics generated to measure recall and precision, the other useful measurement is feature importance.
+05:30
+In Vertex AI, feature importance is displayed through a bar chart to illustrate how each feature contributes to a prediction.
+05:37
+The longer the bar, or the larger the numerical value associated with a feature, the more important it is.
+05:44
+This information helps decide which features are included in a machine learning model to predict the goal.
+05:50
+You will observe the feature importance chart in the lab as well.
+05:54
+Feature importance is just one example of Vertex AI’s comprehensive machine learning functionality called Explainable AI.
+06:02
+Explainable AI is a set of tools and frameworks to help understand and interpret predictions made by machine learning models.
+06:08
+Please check the reading list if you want to know about explainable AI on Google Cloud.

@@ -1,0 +1,103 @@
+You learned about Model Garden, an entry point to start a generative AI project, and Generative AI studio, a tool to develop generative AI projects in the previous lessons.
+00:11
+In this lesson, you examine AI solutions and how to use generative AI to supercharge their features.
+00:18
+In the previous lessons, you were introduced to generative AI and how to use it in development to help design applications and train language models.
+00:20
+In this lesson, you focus on AI solutions and embedded generative AI features.
+00:21
+AI solutions includes two groups, vertical and horizontal solutions.
+00:24
+Vertical or industry solutions refer to solutions that solve specific problems within certain industries.
+00:32
+Examples include: AI for healthcare, which generates healthcare insights and provides services across patients, doctors, and hospitals.
+00:41
+And Discovery AI, which enables retailers to provide Google-quality search and recommendations on their own digital properties, which can help increase conversion rate and reduce search abandonment.
+00:53
+Horizontal solutions, in contrast, usually refer to solutions that solve similar problems across different industries.
+01:00
+For instance, Contact Center AI, or CCAI, aims to improve customer service in contact centers through the use of artificial intelligence.
+01:11
+It can help automate simple interactions, assist human agents, and unlock caller insights.
+01:17
+Document AI uses computer vision, optical character recognition, and natural language processing to create pre-trained models that can extract information from documents.
+01:28
+This increases the speed and accuracy of document processing, which can help organizations make better decisions faster and reduce costs.
+01:36
+Let’s dive into CCAI, explore its main features and learn how generative AI supercharges them.
+01:44
+Contact Center Artificial Intelligence (CCAI) is Google’s solution to apply AI in contact centers.
+01:50
+The goal is to use AI to increase the customer satisfaction and the operational efficiency, while requiring minimum AI expertise.
+02:00
+At the center of Contact Center AI is the conversational core, which empowers three major components: virtual agent, Agent Assit, and Insights.
+02:10
+Let’s briefly look at how Contact Center AI works.
+02:15
+When a customer contacts CCAI, the system automatically determines whether the request is routine or complex.
+02:23
+Routine requests are passed to a virtual agent, a large language model-powered bot that can converse naturally with customers.
+02:31
+The virtual agent may then process the request and pass it to backend fulfillment.
+02:36
+Complex requests are sent to the agent assist, an AI assistant that helps human agents summarize the problem, gather information, provide solutions, and generate insights.
+02:48
+Relevant information and insights can also be saved to the knowledge base throughout the process.
+02:54
+Now let’s look at how generative AI is used to transform the CCAI platform.
+02:59
+Today the Contact Center AI platform is an end-to-end, AI-first Call Center as a Service (CCaaS) solution
+03:05
+that is integrated with a set of prebuilt tools and features including Virtual Agent, Agent Assist, and Insights.
+03:13
+The platform will soon be upgraded with natural language understanding-powered call and chat, as well as ML-driven routing.
+03:20
+This means that the platform will be able to understand what customers are saying and direct them to the appropriate person or department.
+03:28
+It will also be able to learn from the interactions and improve its routing over time.
+03:33
+Today, a CCAI virtual agent provides 24/7 customer self-service.
+03:39
+It provides a conversational voice and chat bot that a customer can get help from any time using natural language.
+03:46
+It also integrates the function to handoff calls to live agents.
+03:50
+Through generative AI, the bots will be faster and easier to use.
+03:54
+They will also be able to handle a wider range of customer interactions, answer customer questions in a more comprehensive and accurate way, and engage in natural conversations with customers.
+04:06
+Today, AI agent assist empowers live agents with step-by-step help during calls and chats.
+04:13
+It also provides agents an automated summary of every interaction afterwards.
+04:18
+In the near future, the Agent Assist will be enhanced with a generative AI feature that can coach live agents on-demand.
+04:25
+CCAI insights currently use natural language processing to analyze conversations such as sentiment analysis, entity identification, and topic detection.
+04:37
+These insights can be used to improve the performance of virtual and live agents.
+04:42
+They can also be used to create training materials for agents and to identify areas where customer service can be improved.
+04:50
+Soon Insights will generate FAQs automatically to improve customer experience with generative AI capabilities.
+04:57
+You can learn more about Google Cloud’s growing list of AI solutions and their embedded generative AI capabilities at cloud.google.com/solutions/ai.
+05:10
+With the rapid development of AI and machine learning, you might hear exciting news everyday.
+05:16
+What do you think about the future of AI and machine learning?
+05:19
+Here are a few of our expectations: The transition from data to AI is inevitable: Data is the fuel that powers AI, and AI extracts insights and possibilities from data.
+05:32
+As AI becomes increasingly powerful and capable, it will learn and adapt in ways that data alone cannot.
+05:38
+As a result, AI is becoming more and more essential for businesses that want to stay ahead of the competition.
+05:45
+Generative AI becomes more important.
+05:48
+It will be used to produce content and improve productivity, which will create new opportunities and offer great potential.
+05:55
+And these opportunities will be more accessible to all, as AI and ML development tools
+06:01
+become easier to use, which allows people without a technical background to benefit from their capabilities.
+06:07
+What do you think, dear learners?

@@ -1,0 +1,83 @@
+Let’s start with the first stage of ML workflow, data preparation.
+00:05
+During this stage, you must upload data and then prepare it for model training with feature engineering.
+00:11
+The data can come from Cloud Storage, BigQuery, or even your local machine.
+00:15
+AutoML supports four types of data: image, tabular, text, and video.
+00:21
+For each data type, AutoML solves different types of problems, called objectives.
+00:27
+For image data, you can train the model to classify images, either single-label or multi-label.
+00:34
+Single-label means you can only assign one tag to an image like dog or cat,
+00:37
+whereas multi-label means you can assign multiple tags to one image like dog, large, and brown.
+00:44
+You can also train the model to detect objects and discover image segmentation.
+00:49
+For tabular data, you can train the model to solve regression, classification, or forecasting problems.
+00:56
+Forecasting is vital to many industries like retail.
+00:59
+To learn more about how to build a forecasting model, please check the course titled Introduction to Vertex Forecasting and time series in practice in the reading list.
+01:09
+For video data, you can train the model to Recognize video actions Classify videos And track objects Finally, for text data, you can train the model to: Classify text.
+01:21
+Extract entities.
+01:23
+And conduct sentiment analysis.
+01:24
+Do these tasks sound familiar?
+01:27
+Right, you learned about entity extraction and sentiment analysis when you explored natural language APIs in the previous module.
+01:36
+Although the tasks can be similar, pre-trained APIs rely on Google’s pre-trained ML models with no customer data, whereas AutoML trains a custom model using your own data.
+01:47
+In reality, you might not be restricted to just one data type and one objective.
+01:53
+Instead, you might need to combine multiple data types and different objectives to solve a business problem.
+01:58
+AutoML is a powerful tool that can help you do this.
+02:02
+After the data is uploaded to AutoML, the next step is preparing it for model training with feature engineering.
+02:09
+Imagine you’re preparing a meal.
+02:12
+Your data is like your ingredients, such as carrots, onions, and tomatoes.
+02:16
+Before you start cooking, you'll need to peel the carrots, chop the onions, and rinse the tomatoes.
+02:22
+This is what feature engineering is like: the data must be processed before the model starts training.
+02:28
+A feature refers to a factor that contributes to the prediction.
+02:32
+It’s an independent variable in statistics or a column in a table.
+02:38
+Preparing features can be both challenging and tedious.
+02:41
+To help, Vertex AI provides a function called Vertex AI Feature Store, which is a centralized repository to organize, store, and serve features.
+02:51
+It aggregates all the features from different sources, updates them, and makes them available from a central repository.
+02:58
+Then, when engineers need to model something, they can use the features available in Vertex AI Feature Store to build a dataset.
+03:07
+Vertex AI automates the feature aggregation to scale the process.
+03:12
+So what are the benefits of Vertex AI Feature Store?
+03:15
+First, features are shareable for training and serving.
+03:18
+They are managed and served from a central repository, maintaining consistency across your organization.
+03:24
+Second, features are reusable.
+03:27
+This helps save time and reduces duplicative efforts.
+03:30
+Third, features are scalable.
+03:32
+They automatically scale to provide low-latency serving, so you can focus on developing the logic to create them without worrying about deployment.
+03:40
+And fourth, features are easy to use.
+03:43
+Vertex AI Feature Store is built on an easy-to-navigate user interface.

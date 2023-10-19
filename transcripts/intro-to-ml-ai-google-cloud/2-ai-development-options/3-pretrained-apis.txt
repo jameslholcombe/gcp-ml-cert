@@ -1,0 +1,131 @@
+Now that you’ve been introduced to the different AI development options available with Google Cloud, let’s now focus on the first: pre-trained APIs.
+00:10
+Good machine learning models require lots of high-quality training data.
+00:14
+You should aim for hundreds of thousands of records to train a custom model.
+00:19
+But what if you don't have that kind of data?
+00:21
+How can you use AI to serve your purposes?
+00:25
+Pre-trained APIs are a great place to start.
+00:27
+API stands for Application Programming Interface, and they define how software components communicate with each other.
+00:34
+Imagine APIs are electric sockets.
+00:37
+Different regions have different standards, for example, the US has type A and B whereas Europe has type F. As a traveller,
+00:43
+you only need to know which adapter to use without worrying about what’s behind the wall and how to build the electric network.
+00:52
+The same principle applies to APIs.
+00:55
+As a user, you only need to know which API to fit your code without worrying
+00:58
+about the implementation of the APIs, or in other words, how to train and deploy ML models.
+01:06
+After you plug the API to your code, you can directly use the functions.
+01:11
+Pre-trained APIs are offered as services.
+01:13
+In many cases, they can act as building blocks to create the application you want without the expense or complexity of creating your own models.
+01:23
+They save the time and effort of building, curating, and training a new dataset so you can just directly deal with predictions.
+01:30
+So, what are the pre-trained APIs provided by Google Cloud?
+01:35
+Let’s explore a short list.
+01:38
+The Cloud Natural Language API recognizes parts of speech called entities and sentiment.
+01:44
+The Speech-to-Text API converts audio to text for data processing.
+01:48
+The Cloud Translation API converts text from one language to another.
+01:54
+The Vision API works with and recognizes content in static images.
+01:59
+The Video Intelligence API recognizes motion and action in video.
+02:04
+And the Dialogflow API builds conversational interfaces.
+02:08
+…And the list is growing while we speak, especially the APIs related to generative AI.
+02:15
+These APIs allow you to use different foundation models to generate various types of content.
+02:21
+These include, PaLM for text.
+02:23
+PaLM is Google’s pre-trained large language model.
+02:26
+The PaLM API allows you perform language tasks and tune the LLM model with your own data.
+02:33
+PaLM for chat enables you to create applications that engage users in dynamic and context-aware conversations.
+02:40
+Imagen for Image lets you create and edit images.
+02:45
+Embeddings API for Text and Image allows you to extract semantic information from unstructured data.
+02:53
+Chirp for speech lets you build voice enabled applications, and Codey for code generation helps you produce and debug code.
+03:02
+You’ll explore more about generatieve AI later in this course.
+03:05
+Let’s try out the Natural Language API in a browser.
+03:10
+Start by navigating to cloud.google.com forward slash natural dash language hashtag section dash two Scroll down to try the API
+03:19
+by uploading a paragraph of text, which can be based in over ten different languages including Chinese, English, and Spanish.
+03:29
+Feel free to view the full list by clicking See supported languages.
+03:33
+For example, if you use the sample paragraph about Google, and click ANALYZE, You find four types of analysis: entity, sentiment, syntax, and category.
+03:45
+Entity analysis identifies the subjects in the text including: A proper noun, such as the name of a particular person, place, organization, or thing.
+03:54
+In this case, Natural Language API automatically detects Google as an organization, Mountain View as a location, and Sundar Pichai as a person.
+04:06
+Common nouns such as goods are also addressed.
+04:09
+In this case, It identifies Android and phone as consumer goods.
+04:14
+How can entity analysis be applied to solve your business problems?
+04:18
+[pause] How about automatic tagging?
+04:22
+Say you have tons of legal documents and you want to auto-tag the main words of each document.
+04:27
+How about document classification?
+04:29
+Say you want to classify your documents to different categories based on key information in the text.
+04:35
+Or what about information extraction, so you can generate summaries based on the key entities in the doc?
+04:42
+There are many other usages of entity analysis.
+04:45
+Take a minute to think about how to apply it to your use cases.
+04:49
+Sentiment analysis is used to identify the emotions indicated in the text such as positive, negative, and neutral.
+04:57
+Score ranges between -1.0 (negative) and 1.0 (positive) and magnitude indicates the overall strength of emotion within the given text, between between zero and positive infinity.
+05:07
+The Natural Language API can analyze the sentiment for the entire document and at entity level.
+05:14
+How can sentiment analysis be used solve your business problems?
+05:17
+[Pause] Well, it can be used to analyze the emotion of customer feedback, social network comments, and conversations.
+05:26
+You can then use this data as feedback to adjust your offerings.
+05:31
+In addition to entity and sentiment analysis, natural language API can analyze syntax and extract linguistics information for further language model training in a specific field.
+05:41
+It can also do category analysis for the entire text.
+05:45
+For example, this text is about an Internet and telecom company.
+05:50
+The UI, or user interface, demonstrates the major features of the natural language API.
+05:56
+When you’re ready to build a production model, you can integrate the APIs into your code.
+06:01
+We’ll show you how in the hands-on lab later in this module.
+06:05
+In summary, you can build AI projects and applications without training your own ML models or providing training data.
+06:13
+Instead, you can use pre-trained AI models through APIs provided by Google.

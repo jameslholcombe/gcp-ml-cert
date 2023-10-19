@@ -1,0 +1,135 @@
+In this lesson, you focus on Generative AI Studio, a powerful tool that helps you develop generative AI projects and tune language models.
+00:09
+Recall that Vertex AI is an end-to-end ML development platform on Google Cloud that helps you build, deploy, and manage machine learning models.
+00:18
+It offers two new tools to help you develop generative AI projects, one is Model
+00:22
+Garden, which you just explored, and second is Generative AI Studio, which you focus on now.
+00:30
+If you are an AI developer or data scientist and want to build an application, you can
+00:35
+use Generative AI Studio to quickly prototype and customize generative AI models with no or low code.
+00:44
+Generative AI Studio currently supports language, vision, and speech.
+00:48
+The list may grow in the future.
+00:50
+For language, you can design a prompt to perform tasks and tune language models.
+00:56
+For vision, you can generate an image based on a prompt and further edit the image.
+01:01
+For speech, you can generate text from speech or the other way around.
+01:06
+Let’s focus on what you can do with language in Generative AI Studio.
+01:10
+Specifically, you can: Design prompts to solve tasks for your business use cases.
+01:16
+Create conversations by specifying the context that instructs how the model should respond.
+01:22
+And tune a model so it is better equipped for your use case, which allows you
+01:25
+to then deploy it to an endpoint to get predictions or test it in prompt design.
+01:31
+Let’s walk through the first feature, design a prompt, in detail.
+01:36
+In the world of generative AI, a prompt is the input text that you feed to your model.
+01:41
+You can ask questions or give instructions.
+01:44
+The model then provides a response based on how you structured your prompt, therefore, the answers you get depend on the questions you ask.
+01:53
+The process of finding and designing the best input text to get the desired response back from the model is called prompt design, which often involves a lot of experimentation.
+02:05
+Note a few best practices around prompt design.
+02:07
+Be concise.
+02:09
+Be specific and well-defined.
+02:13
+Ask one task at a time.
+02:16
+Turn generative tasks into classification tasks.
+02:20
+For instance, instead of asking what programming language to learn, ask if Python, Java, or C is a better fit for a beginner in programming.
+02:29
+And improve response quality by including examples.
+02:33
+Adding instructions and a few examples tends to yield good results; however, there’s currently no best way to write a prompt.
+02:40
+You might need to experiment with different structures, formats, and examples to see what works best for your use case.
+02:47
+For more information about prompt design, check text prompt design in the reading list.
+02:53
+The approach of writing a single command so that the LLM can adopt a certain behavior is called zero-shot prompting.
+03:00
+Generally, you can use 3 methods to shape the model's response in a way that you desire.
+03:07
+Zero-shot prompting is a method where the LLM is given no additional data on the specific task that it is being asked to perform.
+03:14
+Instead, it is only given a prompt that describes the task.
+03:18
+For example, if you want the LLM to answer a question, you just prompt "what is prompt design?".
+03:25
+One-shot prompting is a method where the LLM is given a single example of the task that it is being asked to perform.
+03:32
+In this case, if you want the LLM to write a poem, you might provide a single example poem.
+03:39
+Few-shot prompting is a method where the LLM is given a small number of examples of the task that it is being asked to perform.
+03:46
+For instance, if you want the LLM to write a news article, you might give it a few news articles to read.
+03:53
+Few-shot prompting provides a context for the model to learn from.
+03:58
+When you send a prompt to a model, it produces an array of probabilities over the words that could come next.
+04:04
+And from this array, you need some strategy to decide what it should return.
+04:08
+A simple strategy might be to select the most likely word at every timestep.
+04:13
+But this method can result in uninteresting and sometimes repetitive answers.
+04:19
+On the contrary, if you randomly sample over the distribution returned by the model, you might get some unlikely responses.
+04:26
+By controlling the degree of randomness, you can get more unexpected, and some might say creative, responses.
+04:35
+Back to the model parameters, temperature is a number used to tune the degree of randomness.
+04:40
+Low temperature: Means to narrow the range of possible words to those that have high possibilities and are more typical.
+04:47
+In this case, those are flowers and the other words that are located at the beginning of the list.
+04:53
+This setting is generally better for tasks like questions-and-answers and summarization, where you expect a more "typical" answer with less variability.
+05:02
+High temperature: Means to extend the range of possible words to include those that have low possibility and are more unusual.
+05:09
+In this case, those are bugs and other words that are located at the end of the list.
+05:14
+This setting is good if you want to generate more “creative” or unexpected content.
+05:19
+In addition to adjusting the temperature, top K lets the model randomly return a word from the top K number of words in terms of possibility.
+05:28
+For example, top 2 means you get a random word from the top 2 possible words including flowers and trees.
+05:35
+This approach allows the other high-scoring word a chance of being selected.
+05:40
+However, if the probability distribution of the words is highly skewed and you have one word that
+05:45
+is very likely and everything else is very unlikely, this approach can result in some strange responses.
+05:52
+The difficulty of selecting the best top K value leads to another popular approach that dynamically sets the size of the shortlist of words.
+06:01
+Top P allows the model to return a random word from the smallest subset with the sum of the likelihoods that exceeds or
+06:07
+equals to P. For instance, P of 0.75 means you sample from a set of words that have a cumulative probability greater than 0.75.
+06:18
+In this case, it includes three words: flowers, trees, and herbs.
+06:24
+This way, the size of the set of words can dynamically increase and decrease according to the probability distribution of the next word on the list.
+06:33
+In sum, Generative AI Studio provides a few model parameters for you to play with
+06:37
+such as the model type, temperature, top K, and top P. Note that, you are not
+06:43
+required to adjust them constantly, especially top K and top P. You will explore the
+06:49
+other features of Generative AI Studio later in this module when you walk through the lab.

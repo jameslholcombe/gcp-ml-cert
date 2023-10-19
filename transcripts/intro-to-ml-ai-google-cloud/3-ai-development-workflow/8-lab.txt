@@ -1,0 +1,8 @@
+This is a lab. Please give a thorough overview of:
+Upload a dataset to Vertex AI.
+Train a machine learning model with AutoML.
+Evaluate the model performance.
+Deploy the model to an endpoint.
+Get predictions.
+
+Include code samples where appropriate.

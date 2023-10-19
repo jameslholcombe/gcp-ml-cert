@@ -1,0 +1,175 @@
+Why AI and why Google?
+00:03
+These might be your first questions.
+00:05
+AI is a rapidly growing field with the potential to revolutionize many industries.
+00:11
+Google is a leader in the development of AI, and it offers a wide range of tools and technologies for AI development.
+00:17
+By learning about AI and using Google's tools and technologies, you can be a part of the next wave of innovation.
+00:23
+Let's begin!
+00:25
+We are living in the era of artificial intelligence.
+00:28
+How did we get here?
+00:30
+The first industrial revolution was powered by steam in the 18th century, the second by electricity in the 19th century, the third by information technology in
+00:39
+the mid-20th century and today we are in the fourth industrial revolution, which is powered by artificial intelligence, or AI, specifically generative AI, a recent AI development.
+00:51
+Generative AI helps produce content such as text, code, and images.
+00:56
+It has enormous potential and creates new opportunities.
+01:00
+Google has been implementing artificial intelligence into many critical products, systems, and services for over ten years.
+01:07
+For example, have you ever noticed how Gmail automatically suggests responses to a message that you’ve received?
+01:13
+This feature is called Smart Reply, which uses artificial intelligence to predict how you might respond.
+01:19
+Behind this intelligence is AI technology known as natural language processing, which is just one example of an impressive list of technologies that Google scientists and engineers are working on.
+01:31
+The goal of these technologies is not to exclusively benefit Google customers.
+01:36
+The goal is to enable every company to be an AI company by supporting them in their journey from data to AI.
+01:43
+So, for workers in the travel and hospitality field, this might mean using AI and ML to improve aircraft scheduling or provide customers with dynamic pricing options.
+01:53
+For retail-sector employees, it might mean using AI and ML to improve sales forecasting and optimize inventory planning.
+02:01
+The potential solutions are endless.
+02:04
+What are the problems in your business that artificial intelligence and machine learning might help you solve?
+02:09
+As an AI developer or a data scientist, you might be wondering, “Why should I trust Google for artificial intelligence and machine learning?”
+02:18
+Firstly, Google has been an AI-first company since the beginning.
+02:22
+Second, Google is the leader in AI and ML innovations.
+02:26
+Thirdly, Google is a believer in responsible AI.
+02:29
+Let's take a brief look at how Google began innovating data and AI in its products.
+02:35
+Data is the basis of AI.
+02:37
+Historically speaking, Google experienced challenges related to data processing quite early.
+02:42
+As a search engine, Google needed to constantly invent new data processing methods to index the World Wide Web and keep up with the rapidly growing internet.
+02:52
+The innovation started in the early 2000s from Google File System, or GFS, which is the foundation for Cloud Storage, and MapReduce, which aims to manage large-scale data processing.
+03:03
+To address the challenges of different types of data, whether structured or unstructured, and different processing requirements,
+03:08
+either streaming or batch, Google has continued to invent multiple products and technologies in data analytics and engineering.
+03:17
+For example, BigQuery, the data warehouse widely used on Google Cloud, can analyze large amounts of data and build ML models at the same time with SQL, Structured Query Language.
+03:29
+In 2015, Pub/Sub was invented to help build data pipelines for streaming analytics.
+03:35
+In the field of AI, Google has also contributed many key technologies.
+03:39
+For example, scikit-learn, the widely-used ML library in Python for general purposes, was a Google summer coding project back in 2007.
+03:50
+TensorFlow, an open-source ML platform focusing on training deep learning neural networks, was developed by Google in 2015 and has evolved in multiple versions.
+04:01
+The transformer, the basis of all generative AI applications seen today, was invented by Google in 2017.
+04:10
+From this, large language models evolved rapidly, including BERT, Bidirectional Encoder Representations from Transformers, in
+04:16
+2018, LaMDA, Language Model for Dialogue Applications, in 2021, and PaLM, Pathways Language Model, in 2022.
+04:27
+In terms of AI products, Google built an end-to-end AI development platform that evolves from AutoML in 2018, to Al Platform in 2019, and Vertex AI in 2021.
+04:40
+In 2023, Google also announced a series of Generative AI products on Vertex AI such as Generative AI Studio and Model Garden.
+04:49
+You’ll explore all of these AI technologies and products in depth, later in this course.
+04:56
+Google is the leader in AI and ML innovations.
+04:59
+Here are four major reasons: All development tools are empowered by Google's state-of-the-art ML models.
+05:06
+So you build on the best.
+05:09
+Google provides an end-to-end development platform to convert an ML model from experiment to production.
+05:15
+So you can be more efficient.
+05:17
+Google provides a unified data-to-AI platform.
+05:20
+So you can develop data and AI projects with ease.
+05:25
+Like Google Cloud itself, the AI services are based on an efficient and scalable infrastructure.
+05:30
+So you can get more for less.
+05:32
+Google has been recognized as a Leader in the Gartner Magic Quadrant for Cloud AI Developer Services for 4 consecutive years, from 2020 to 2023.
+05:43
+It has also received recognition in numerous annual industry awards and reports in recent years.
+05:51
+AI comes with its own set of unique challenges.
+05:54
+Google integrates responsible AI into its AI principles.
+05:58
+In June 2018, Google announced seven AI principles to guide its work.
+06:03
+These are concrete standards that actively govern Google’s research and product development and affect its business decisions.
+06:10
+Here’s an overview of each one:
+06:13
+1. AI should be socially beneficial.
+06:17
+Any project should take into account a broad range of social and economic factors and will
+06:22
+proceed only where we believe that the overall likely benefits substantially exceed the foreseeable risks and downsides.
+06:30
+2. AI should avoid creating or reinforcing unfair bias.
+06:37
+We seek to avoid unjust effects on people, particularly those related to sensitive characteristics such as race, ethnicity, gender, nationality, income, sexual orientation, ability, and political or religious belief.
+06:52
+3. AI should be built and tested for safety.
+06:57
+We will continue to develop and apply strong safety and security practices to avoid unintended results that create risks of harm.
+07:05
+4. AI should be accountable to people.
+07:08
+We will design AI systems that provide appropriate opportunities for feedback, relevant explanations, and appeal.
+07:15
+5. AI should incorporate privacy design principles.
+07:20
+We will give opportunity for notice and consent, encourage architectures with privacy safeguards, and provide appropriate transparency and control over the use of data.
+07:30
+6. AI should uphold high standards of scientific excellence.
+07:34
+We will work with a range of stakeholders to promote thoughtful leadership in this area, drawing on scientifically rigorous and multidisciplinary approaches.
+07:43
+And we will responsibly share AI knowledge by publishing educational materials, best practices, and research that enable more people to develop useful AI applications.
+07:53
+7. AI should be made available for uses that accord with these principles.
+07:59
+Many technologies have multiple uses, so we’ll work to limit potentially harmful or abusive applications.
+08:06
+Establishing principles was a starting point, rather than an end.
+08:09
+They are a foundation that establishes what Google stands for, what to build, and why to build it, and they are core to the success of Google’s enterprise AI offerings.
+08:21
+To implement responsible AI, Google takes a series of steps.
+08:25
+Education and research, such as online training courses and guidebooks, are readily available at scale for all of our products and services.
+08:35
+Product and use case reviews are enacted.
+08:37
+Google has a central team that is dedicated to the ethical review of new AI and advanced technologies before launch.
+08:44
+The review metrics include machine-learning fairness, security, privacy, human rights, culture, and social sciences.
+08:52
+Finally, Google continues to develop governance and assurance tooling to support the responsible development and implementation of AI.
+08:59
+For example, Explainable AI offerings, which include such features as Model Evaluation, Model Monitoring, and Model Registry to support data and model governance.
+09:09
+In sum, Google’s AI principles revolve around its being an AI-first company with a rich
+09:16
+history in AI development, a leader in AI innovations, and a practitioner of Responsible AI ethics.
+09:23
+Now you know why you can trust Google for artificial intelligence and machine learning!

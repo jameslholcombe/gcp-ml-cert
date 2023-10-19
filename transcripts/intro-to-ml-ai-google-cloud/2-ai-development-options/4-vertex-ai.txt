@@ -1,0 +1,87 @@
+In this lesson, you’ll explore Vertex AI, which is the unified platform that supports various technologies and tools on Google Cloud to help you build an ML project from end-to-end.
+00:11
+For years now, Google has invested time and resources into developing data and AI.
+00:17
+Google had developed crucial technologies and products, from scikit-learn as a Google summer coding project back in 2007, to Vertex AI and generative AI today.
+00:28
+As an AI-first company, Google has applied AI technologies to many of its products and services, like Gmail, Google Maps, Google Photos, and Google Translate, just to name a few.
+00:40
+But developing these technologies doesn’t come without challenges.
+00:44
+Some traditional challenges include handling large quantities of data, determining the right machine learning model to train the data, and harnessing the required amount of computing power.
+00:55
+Then there are challenges around getting ML models into production.
+01:00
+Some of the challenges can be scalability, monitoring, and continuous integration and deployment.
+01:06
+In fact, according to Gartner, only half of enterprise ML projects get past the pilot phase.
+01:13
+There are also ease-of-use challenges.
+01:15
+Many tools on the market require advanced coding skills, which can take a data scientist’s focus away from model configuration.
+01:22
+Without a unified workflow, data scientists often have difficulties finding tools.
+01:27
+Google’s solution to many of the production and ease-of-use challenges is Vertex AI, a unified platform that brings all the components of the machine learning ecosystem and workflow together.
+01:39
+So, what exactly does a unified platform mean?
+01:43
+There are two primary aspects: Firstly, it means that Vertex AI provides an end-to-end ML pipeline to prepare data, and create, deploy, and manage models over time, and at scale.
+01:56
+For instance, During the data readiness stage, users can upload data from wherever it’s stored: Cloud Storage, BigQuery, or a local machine.
+02:05
+Then, during the feature readiness stage, users can create features, which are the processed data that
+02:10
+will be put into the model, and then share them with others by using the feature store.
+02:16
+After that, it’s time for training and hyperparameter tuning.
+02:20
+This means that when the data is ready, users can experiment with different models and adjust hyperparameters.
+02:27
+And finally, during deployment and model monitoring, users can set up the pipeline to transform the model into production by automatically monitoring and performing continuous improvements.
+02:38
+You’ll learn how to do this later in the course, when you explore MLOps.
+02:42
+Also, Vertex AI is a unified platform because it provides different products, from preconfigured to DIY, to build an ML project.
+02:52
+Vertex AI allows users to build machine learning models with either AutoML, a no-code solution, or Custom Training, a code-based solution.
+03:01
+It also offers generative AI products that help you build applications, train models, and generate content in multiple modalities such as text, code, images, and speech.
+03:11
+You’ll explore more about generative AI later in this course.
+03:16
+Let’s focus on AutoML and custom training with Vertex AI in this module.
+03:22
+AutoML provides an easy to navigate UI.
+03:25
+It lets data scientists focus on what business problems to solve instead of how to code and deploy an ML solution.
+03:33
+Custom training gives data scientists and ML engineers more control over the development environment and process.
+03:39
+They can use tools like Vertex AI Workbench and Colab to DIY their ML projects.
+03:45
+One convenient feature is that data scientists can now write SQL with Workbench on Vertex AI to seamlessly connect BigQuery and Vertex AI.
+03:56
+Being able to perform such a wide range of tasks in one unified platform has many benefits.
+04:03
+This can be summarized with four Ss: It’s seamless.
+04:07
+Vertex AI provides a smooth user experience from uploading and preparing data all the way to model training and production.
+04:15
+It’s scalable.
+04:17
+The Machine Learning Operations (MLOps) provided by Vertex AI helps to monitor and manage the ML production and therefore scale the storage and computing power automatically.
+04:28
+It’s sustainable.
+04:31
+All of the artifacts and features created using Vertex AI can be reused and shared.
+04:37
+And it’s speedy.
+04:38
+Vertex AI produces models that have 80% fewer lines of code than competitors.
+04:44
+In addition to AutoML and custom training, Vertex AI also provides tools for generative AI.
+04:51
+You can use these tools to generate content and embed generative AI into your applications.
+04:56
+We will discuss generative AI technologies and tools later in this course.

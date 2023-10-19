@@ -1,0 +1,49 @@
+In this lesson, let’s explore the AI/ML framework on Google Cloud.
+00:04
+You learned about the benefits of using Google Cloud to develop AI and ML projects.
+00:09
+The next question you may have is: how do I start?
+00:13
+Assuming you are a data scientist and you want to develop an ML model from beginning to end, what options do you have?
+00:19
+Say you are an ML engineer, and you want to build an ML pipeline to automatically monitor the model performance.
+00:25
+What tools do you have?
+00:26
+Or perhaps you are an AI/ML developer who would like to leverage generative AI capabilities in an application.
+00:33
+What products can you use?
+00:35
+You’ll find all the answers in this course.
+00:37
+This course presents a toolbox, which is based on the AI/ML framework on Google Cloud.
+00:43
+The toolbox is organized into layers to make navigation easier.
+00:47
+You begin with the AI foundations layer in this module, module one, where you learn about cloud
+00:51
+essentials like compute and storage, and data and AI products that support your journey from data to AI.
+00:59
+You then advance to the AI development layer.
+01:01
+In module 2, you focus on the options to develop an ML model from beginning to end on Google Cloud, where
+01:07
+you explore the out-of-the-box solution like pre-built APIs, low or no-code solutions like AutoML, and the do-it-yourself approach like custom training.
+01:19
+In module 3, you walk through the workflow to build an ML model using Vertex
+01:23
+AI, the end-to-end AI development platform, from data preparation, to model training, and finally model serving.
+01:30
+Additionally, you learn how to automate this ML workflow using the Vertex AI Pipelines SDK.
+01:37
+Finally, you are introduced to generative AI in module 4, how it works, the tools to develop generative AI projects, and how generative AI empowers AI solutions.
+01:53
+No matter your role, module one provides you with an overview of the AI/ML framework on Google Cloud, the cloud infrastructure, and the data and AI products.
+02:04
+If you are a data scientist and would like to build your own ML models, module two and three walk through all the details you need to know.
+02:11
+If you are a ML engineer and would like to automate the ML pipeline, you may get the most useful information from module three.
+02:18
+If you are an app developer or even a business user and would like to leverage
+02:22
+generative AI in your applications, module 4 helps you navigate through the use case, tools, and technologies.

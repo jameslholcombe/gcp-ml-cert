@@ -1,0 +1,69 @@
+Now that you’re equipped with the essential ML terminologies, let’s advance to the ML workflow and walk through the main stages.
+00:08
+Building an ML model is actually not too different from serving food in a restaurant.
+00:12
+You start by preparing raw ingredients and finish by serving the dishes on the table.
+00:17
+There are three main stages to the ML workflow with Vertex AI.
+00:21
+The first stage is data preparation, which includes two steps: data uploading and feature engineering.
+00:28
+A model needs a large amount of data to learn from.
+00:31
+The quality and quantity of the data decide how much and how well the machine learns.
+00:36
+The data used in machine learning can be real-time streaming data or batch data.
+00:41
+The data can also be structured or unstructured.
+00:44
+Structured data is data that can be easily stored in tables, such as numbers and text.
+00:49
+Unstructured data is data that cannot be easily stored in tables, such as images and videos.
+00:55
+The second stage of the ML workflow is model development.
+00:59
+A model needs a tremendous amount of iterative training.
+01:03
+This is when training and evaluation form a cycle to train a model, then evaluate the model, and then train the model some more.
+01:11
+The third and final stage is model serving.
+01:14
+A model needs to actually be used in order to predict results.
+01:18
+This is when the machine learning model is deployed and monitored.
+01:22
+If you don’t move an ML model into production, it has no use and remains only a theoretical model.
+01:29
+Compare this process to serving food in a restaurant, data preparation is when you prepare the raw ingredients, model development is
+01:35
+when you experiment with different recipes, and model serving is when you finalize the menu to serve the meal to customers.
+01:43
+Now, it’s important to note that an ML workflow isn’t linear, it’s iterative.
+01:48
+For example, during model training, you might need to return to the raw data and generate more useful features to feed the model.
+01:57
+When monitoring the model during model serving, you might find data drifting, or the accuracy of your prediction might suddenly drop.
+02:05
+You might need to check the data sources and adjust the model parameters.
+02:08
+Fortunately, these steps can be automated with MLOps.
+02:11
+You’ll learn more about this later in this module.
+02:15
+Although the main stages remain the same, you have two options to set up the workflow with Vertex AI:
+02:21
+The first choice is to use AutoML, a no-code solution that lets you build an ML model through UI.
+02:28
+It's user friendly and doesn't require a lot of ML expertise.
+02:31
+Also, no coding skills are needed.
+02:33
+2.
+02:34
+Alternatively, you can code the workflow with Vertex AI Workbench or Colab using Vertex AI Pipelines.
+02:40
+Vertex AI Pipelines is essentially a tool kit that includes pre-built SDKs and software development kits, which are the building blocks of a pipeline.
+02:50
+Coding the pipeline is a good option if you're an experienced ML engineer or data scientist and want to automate the workflow programmatically.
+02:58
+Let’s focus on AutoML next, and then explore the code-based approach later in this module.

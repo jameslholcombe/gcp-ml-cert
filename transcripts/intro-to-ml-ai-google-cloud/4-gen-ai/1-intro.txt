@@ -1,0 +1,23 @@
+In the previous module, you learned how to develop an ML model from beginning to end.
+00:06
+More specifically, you walked through the ML workflow and explored how to convert it into an automated pipeline.
+00:13
+In this module, you learn about Generative AI, the most recent AI innovation that offers a wide range of exciting opportunities.
+00:22
+You explore the generative AI tools that assist AI development and the integration of its capabilities into AI solutions.
+00:30
+You start with the concepts and history of generative AI and large language models, or LLMs, which are the primary models that empower generative AI.
+00:40
+You are then introduced to a use case, where you learn how to apply generative AI in practice to build Duet AI, an AI assistant for developers across Google Cloud.
+00:51
+After that, you explore two tools on Vertex AI to use generative AI in ML development.
+00:57
+First is Model Garden, which is like a model search engine and the entry point to all AI models and tools.
+01:04
+The second is Generative AI Studio, which is a powerful tool to help you develop generative AI projects and tune language models.
+01:12
+You then advance to AI solutions, and learn how generative AI supercharges their features.
+01:18
+Finally, you have a hands-on lab using Generative AI Studio to create prompts and conversations.
+01:24
+Let’s get started!
